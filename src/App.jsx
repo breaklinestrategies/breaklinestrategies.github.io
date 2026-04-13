@@ -1,11 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { ArrowRight, ChevronRight, Mail, Flag, Sprout, Target, ChartNoAxesCombined, BriefcaseBusiness, TrendingUp, BarChart3 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-const logoSrc = "data:image/webp;base64,UklGRppuAABXRUJQVlA4WAoAAAAQAAAAowEAIwEAQUxQSKU1AAAB/yckSPD/eGtEpO4TlNxIkiRJIubWq9r/P+wRGUv2zDmi/xPAPz1fMup38AV8ZfK/wutT436b/sE7kwNvmtF7DpfrlrUAuj/7/YlyD4f956M/H/DGs1Pur5OKNz7mqnnRCKCuWSc87Q64rY0XjgJjq7PWGl4oLMfztdZ6A+DHL/pvdO/XpcZuVFDNiUZJAigCipqDsoqKjcnBABnWgoMMdJOQMdlGoYba2au2tRZVtYXq7oM566amoSoJoFv3WRVV3VVnVElR1U1VAYz+JunuK10k7EZdJLQmiqAkqI5KRH90R0d5e9xfd7OKRyoKiqLgbSTJUQIJA+SQB6cqDUKGDECYZHhUEEAQFARBH3kt/GHbttpOs33Hdd33mMvixAlBg1O0uBZreSBABQgUT3GnaCkQvLi3QIEUSIVSKF4geHF3CASCkwBxWXOOcd/XH3PMMedaK6ysfN/3+zUiJoD/8V8wfFjcYQgZ4hZniPS/Y4Xsgn+A96qLLeLtW8KfVuu1OUCSiCyOgCWjYbNXtXvu23wEQOIXR1Q0iugKwcxmXnf1iCZAvFvcIFSPsnIWzKzyxmlHO0DV6eKE2h4s4IFvnr7/u/sBb2a2vs7JScfd1LzbeC0CQaBEOdPu7xibYzzSxgC70NI4dcrpvjIuL7veS4E9dfqN9Vb0H6wE7L0N7rq8k2mb9t25CWkAIb2NW8eh3we2uFkwl+RPURWDqj20Wv6xlIbafwTIB2dc07f6wd1qvVptvrhL2r6UZvGcfL5d9JPx6Nhv8+fb9e//tb0uzqjKUnYfHeVG6Ergx1wYkzl8AKhK+L5j0XemUv1dNLTjf/5p44Rl/UVi1X6k3nLlpqze2Xb3yEPONiU2f7QQngzxRhi4Q3bso91I0B6tV7TWYTG0gAjVrrcm6Zr8fRk8HNH8l1mF5AyK2KzzL3ldroLzFodSyznHu2q4gQ+3WaUhtnQm6CEtMrvLtm2x+QFtctIR8lmLkBgbJA0NuMUsY+YDZnM1+Kq0G6v7UysUPZxdiMAr+evv+7AasDV3Nhy2cnHkuDU99q7+9biLDIDv0dG0AIdrjlwmPpePpqX2jrlGkFXP6YkakAK6SMOu3V+pvI7Xt1Sg7pMBgEMkD5JAFghf0u9ZfiCh1nJhC9FluGf2CB1kc+dDypw9QMm2J+23N0MHN1x4lwyt5LLxUV2+4DeK4Cv5H8HsREO4TBnzKAvyQP3UHc2GgQ7lzcsTR/Q+zRtHfXrMEG4E3b1lrLo0sfo8hPSf2JA9Psq6GW6Flq6R8fEETKfSCE7dGW4g5pL9KYXms6Xq5SZrgnssS2U+23x4m+v2i4u9lq9QzMi40rcVjlwmisXwH0k9C3F9HhbBPiW7uF6S2EVj+IdEk3r7nU3j7Wg9kB0h1rFJvLZbl7c6uAq/8HRrZL3BvQ78zfFVvDsXhqdWY75gGkv4Hyz5eP1cQJ9OxK9wWGN2J+u0V5aU0NwZxAgkXB08tNhOq44jSN8bJAA5GACjxwpcKOh+TqvAb7UYRP6L8zxQ6rSH/xk1blfNOv5xQWjtOGucNUNpnwv0jv+kvwNjn6Vuj1YeOdh4yRm4IIvQxTmeq8mFfPV1+VE3bS7WwU6D7fIZLFE8j54X1ygfW83b3n4Le8iOYzL07gCG1i9IDYEb/BQ+v5gzKyX6m3MXZlAOujJbEVG8hYV4XxHd3c+Hp16r4s2IN7YKdkWSLx0wC0jo3YyvV+8xF+qmn2/hu5BLFn+oBC57R0V5n7A2fcgntt++v1pE1n1tDgsbQ9x1v1TqJ5ov3P3WBRG7LwJ9dWSm8af3kWwlmwK9AnV7EtmVvKQ6z9U1+iwxVeN9K8W34jao3JzFQApYgEdR59LkPIP9ZrvssUyVjweQ3gwd0WJjjrShis4eR6Bczf0zRNeI2TI9Fk4z+v8oElYoRa7EnOqJZ3CWl3Ut+liO/QVYOAavP2OTwS1vzHa0KJgzhcr1X4Z3zvvnGr8ro5rIcQ2W8q1drtfjlwmD5GZ9EF6i0XU78mA4JHjr3Cq8v9DLy8y9JjlwmOeP+RQm3hS1Eplk/AAAAA=";
-const featuredGolfImage = "data:image/webp;base64,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";
+const logoSrc = "/images/logo.png";
+const heroCourse = "/images/hero-course.jpg";
+const servicesCourse = "/images/services-course.jpg";
 
 const serviceHighlights = [
   {
@@ -106,10 +107,14 @@ const navItems = [
 export default function BreakLineStrategiesSite() {
   return (
     <div className="min-h-screen bg-[#f4f0ea] text-[#171717]">
-      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f4f0ea]/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <a href="#home" className="flex items-center gap-4">
-            <img src={logoSrc} alt="BreakLine Strategies" className="h-12 w-auto object-contain md:h-14" />
+      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f4f0ea]">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-8">
+          <a href="#home" className="flex items-center">
+            <img
+              src={logoSrc}
+              alt="BreakLine Strategies"
+              className="block h-35 w-auto object-contain mix-blend-multiply md:h-40"
+            />
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
@@ -117,7 +122,7 @@ export default function BreakLineStrategiesSite() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-black/70 transition hover:text-black"
+                className="text-sm font-semibold text-black/200 transition hover:text-black"
               >
                 {item.label}
               </a>
@@ -205,7 +210,7 @@ export default function BreakLineStrategiesSite() {
               <div className="absolute -left-8 top-10 h-48 w-48 rounded-full bg-[#7d8e74]/20 blur-3xl" />
               <div className="relative overflow-hidden rounded-[2rem] border border-black/10 bg-white p-4 shadow-[0_30px_80px_rgba(0,0,0,0.10)]">
                 <img
-                  src={featuredGolfImage}
+                  src={heroCourse}
                   alt="Golf course view"
                   className="h-[420px] w-full rounded-[1.5rem] object-cover"
                 />
@@ -237,7 +242,7 @@ export default function BreakLineStrategiesSite() {
 
             <div className="mt-14 overflow-hidden rounded-[2rem] border border-black/10 bg-[#ebe5dc] p-4 shadow-[0_25px_70px_rgba(0,0,0,0.08)]">
               <img
-                src={featuredGolfImage}
+                src={servicesCourse}
                 alt="Golf course aerial view"
                 className="h-[420px] w-full rounded-[1.5rem] object-cover"
               />
@@ -284,7 +289,7 @@ export default function BreakLineStrategiesSite() {
         </section>
 
         <section id="case-studies" className="border-t border-black/10 bg-white/70">
-          <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="mx-auto max-w-7xl px-6 py-1 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm uppercase tracking-[0.26em] text-black/45">Case Studies</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#161616] md:text-5xl">
