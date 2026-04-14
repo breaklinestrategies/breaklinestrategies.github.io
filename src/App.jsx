@@ -376,10 +376,7 @@ export default function BreakLineStrategiesSite() {
                 operate them. That makes the work more specific, more useful, and much closer to the actual economics of
                 the business.
               </p>
-              <p>
-                Once you send over your final about-page copy, this section can be swapped out directly with your own
-                story, background, and point of view.
-              </p>
+              
             </div>
           </div>
         </section>
