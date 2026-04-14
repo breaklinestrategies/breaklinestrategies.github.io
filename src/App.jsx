@@ -233,11 +233,7 @@ export default function BreakLineStrategiesSite() {
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#161616] md:text-5xl">
                 A commitment to growth and problem-solving.
               </h2>
-              <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-black/65">
-                This section borrows the strongest parts of your earlier services page: a centered intro, a visual break
-                with a golf image, and a more detailed service grid underneath. It keeps the original feel, but makes it
-                cleaner, more premium, and easier to scan.
-              </p>
+          
             </div>
 
             <div className="mt-14 overflow-hidden rounded-[2rem] border border-black/10 bg-[#ebe5dc] p-4 shadow-[0_25px_70px_rgba(0,0,0,0.08)]">
@@ -295,10 +291,7 @@ export default function BreakLineStrategiesSite() {
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#161616] md:text-5xl">
                 Selected work that shows how BreakLine thinks.
               </h2>
-              <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-black/65">
-                These can be real projects, sample analyses, or condensed breakdowns of work you have already done. The
-                goal is to show process, judgment, and business thinking before a client ever gets on a call.
-              </p>
+              
             </div>
 
             <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -335,12 +328,7 @@ export default function BreakLineStrategiesSite() {
                 <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#161616] md:text-5xl">
                   A place for the outcomes behind the work.
                 </h2>
-                <p className="mt-5 max-w-xl text-base leading-7 text-black/65">
-                  This section now reflects the kind of work you actually did: analyzing booking channels, lead times,
-                  pricing, total revenue, course utilization, player ZIP codes, travel behavior, and seasonal demand.
-                  That analysis supported updated tee-time rates and on-property offers designed to keep customers on site
-                  longer and make pricing better match real demand.
-                </p>
+                
               </div>
 
               <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
@@ -403,10 +391,7 @@ export default function BreakLineStrategiesSite() {
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#161616]">
                 Let’s talk about your course, portfolio, or growth goals.
               </h2>
-              <p className="mt-5 max-w-xl text-lg leading-8 text-black/70">
-                For now, the cleanest contact setup is a simple form paired with your email. Later, we can wire this up to
-                Netlify Forms or another free form handler when the site is ready to deploy.
-              </p>
+              
 
               <div className="mt-10 space-y-4 text-black/70">
                 <a
