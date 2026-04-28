@@ -108,12 +108,12 @@ export default function BreakLineStrategiesSite() {
   return (
     <div className="min-h-screen bg-[#f4f0ea] text-[#171717]">
       <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f4f0ea]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 lg:px-8">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0 lg:px-8">
           <a href="#home" className="flex items-center">
             <img
               src={logoSrc}
               alt="BreakLine Strategies"
-              className="block h-35 w-auto object-contain mix-blend-multiply md:h-40"
+              className="block h-35 w-auto object-contain mix-blend-multiply md:h-40 -my-6"
             />
           </a>
 
