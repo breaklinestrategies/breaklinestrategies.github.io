@@ -153,14 +153,24 @@ export default function BreakLineStrategiesSite() {
               </div>
 
               <h1 className="max-w-3xl text-5xl font-semibold leading-tight tracking-tight text-[#161616] md:text-6xl">
-                Helping golf courses and ownership groups grow with sharper strategy.
+                Revenue analytics for golf operators who want smarter pricing, efficient utilization, and clearer growth decisions.
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-black/70">
-                BreakLine Strategies works with golf businesses to improve revenue performance, uncover growth
-                opportunities, and turn operational data into decisions that actually move the business forward.
+                BreakLine Strategies helps golf courses turn tee-time, customer, weather, competitor, and local-event data into pricing and revenue strategies that improve performance without overloading the course.
               </p>
-
+              <div className="mt-8 rounded-2xl border border-black/10 bg-white/75 p-5 shadow-sm">
+                <p className="text-sm uppercase tracking-[0.22em] text-black/45">
+                  Recent project result
+                </p>
+                <p className="mt-2 text-2xl font-semibold text-[#161616]">
+                  Contributed to a 12% revenue increase in two months.
+                </p>
+                <p className="mt-2 text-sm leading-6 text-black/65">
+                  Pricing and promotion changes were based on booking behavior, customer travel distance,
+                  utilization patterns, weather history, competitor promotions, and local events.
+                </p>
+              </div>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <a href="#contact">
                   <Button size="lg" className="rounded-full bg-[#171717] px-6 text-white hover:bg-black/85">
@@ -181,21 +191,21 @@ export default function BreakLineStrategiesSite() {
 
               <div className="mt-12 grid gap-5 border-t border-black/10 pt-8 sm:grid-cols-3">
                 <div>
-                  <p className="text-3xl font-semibold text-[#171717]">Revenue</p>
+                  <p className="text-3xl font-semibold text-[#171717]">Pricing</p>
                   <p className="mt-2 text-sm leading-6 text-black/60">
-                    Focus on pricing, demand, and business performance.
+                    Use booking patterns and demand signals to set smarter rates.
                   </p>
                 </div>
                 <div>
-                  <p className="text-3xl font-semibold text-[#171717]">Growth</p>
+                  <p className="text-3xl font-semibold text-[#171717]">Utilization</p>
                   <p className="mt-2 text-sm leading-6 text-black/60">
-                    Build plans around real opportunities, not vague goals.
+                    Grow revenue without unnecessarily overloading the course.
                   </p>
                 </div>
                 <div>
-                  <p className="text-3xl font-semibold text-[#171717]">Clarity</p>
+                  <p className="text-3xl font-semibold text-[#171717]">Forecasting</p>
                   <p className="mt-2 text-sm leading-6 text-black/60">
-                    Translate messy information into decisions you can act on.
+                    Plan around weather, seasonality, competitors, and local demand drivers.
                   </p>
                 </div>
               </div>
@@ -406,7 +416,7 @@ export default function BreakLineStrategiesSite() {
 
             <div className="rounded-[2rem] border border-black/10 bg-white p-6 shadow-[0_22px_60px_rgba(0,0,0,0.07)]">
               <form
-                action=":https://formspree.io/f/mlgaylzd"
+                action="https://formspree.io/f/mlgaylzd"
                 method="POST"
                 className="grid gap-5"
               >
