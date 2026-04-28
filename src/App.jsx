@@ -386,9 +386,12 @@ export default function BreakLineStrategiesSite() {
             <div>
               <p className="text-sm uppercase tracking-[0.26em] text-black/45">Contact</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#161616]">
-                Let’s talk about your course, portfolio, or growth goals.
+                Want to find where your course is leaving revenue on the table?
               </h2>
-              
+              <p className="mt-5 max-w-xl text-base leading-7 text-black/65">
+                Send a message with a little context about your course, booking system,
+                or current revenue challenge. I’ll respond directly.
+              </p>
 
               <div className="mt-10 space-y-4 text-black/70">
                 <a
@@ -402,34 +405,96 @@ export default function BreakLineStrategiesSite() {
             </div>
 
             <div className="rounded-[2rem] border border-black/10 bg-white p-6 shadow-[0_22px_60px_rgba(0,0,0,0.07)]">
-              <div className="grid gap-5">
+              <form
+                action=":https://formspree.io/f/mlgaylzd"
+                method="POST"
+                className="grid gap-5"
+              >
                 <div>
-                  <label className="mb-2 block text-sm text-black/50">Name</label>
+                  <label htmlFor="name" className="mb-2 block text-sm text-black/50">
+                    Name
+                  </label>
                   <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
                     className="w-full rounded-2xl border border-black/10 bg-[#faf8f4] px-4 py-3 text-[#171717] outline-none placeholder:text-black/35"
                     placeholder="Your name"
                   />
                 </div>
+
                 <div>
-                  <label className="mb-2 block text-sm text-black/50">Email</label>
-                  <input
-                    className="w-full rounded-2xl border border-black/10 bg-[#faf8f4] px-4 py-3 text-[#171717] outline-none placeholder:text-black/35"
-                    placeholder="you@example.com"
-                  />
-                </div>
-                <div>
-                  <label className="mb-2 block text-sm text-black/50">Message</label>
-                  <textarea
-                    rows={6}
-                    className="w-full rounded-2xl border border-black/10 bg-[#faf8f4] px-4 py-3 text-[#171717] outline-none placeholder:text-black/35"
-                    placeholder="Tell me a bit about your course, ownership group, or what you are trying to improve."
-                  />
-                </div>
-                <Button className="w-full rounded-full bg-[#171717] py-6 text-white hover:bg-black/85">
-                  Send message
-                </Button>
+                <label htmlFor="email" className="mb-2 block text-sm text-black/50">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  className="w-full rounded-2xl border border-black/10 bg-[#faf8f4] px-4 py-3 text-[#171717] outline-none placeholder:text-black/35"
+                  placeholder="you@example.com"
+                />
               </div>
-            </div>
+
+              <div>
+                <label htmlFor="company" className="mb-2 block text-sm text-black/50">
+                  Course or Company
+                </label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  className="w-full rounded-2xl border border-black/10 bg-[#faf8f4] px-4 py-3 text-[#171717] outline-none placeholder:text-black/35"
+                  placeholder="Golf course, club, ownership group, or company"
+                />
+              </div>
+              <div>
+                <label htmlFor="interest" className="mb-2 block text-sm text-black/50">
+                  What are you looking for help with?
+                </label>
+                <select
+                  id="interest"
+                  name="interest"
+                  defaultValue=""
+                  className="w-full rounded-2xl border border-black/10 bg-[#faf8f4] px-4 py-3 text-[#171717] outline-none"
+                >
+                  <option value="" disabled>
+                    Select one
+                  </option>
+                  <option value="Pricing strategy">Pricing strategy</option>
+                  <option value="Revenue forecasting">Revenue forecasting</option>
+                  <option value="Utilization analysis">Utilization analysis</option>
+                  <option value="Customer behavior analysis">
+                    Customer behavior analysis
+                  </option>
+                  <option value="General consulting">General consulting</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="message" className="mb-2 block text-sm text-black/50">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={6}
+                  required
+                  className="w-full rounded-2xl border border-black/10 bg-[#faf8f4] px-4 py-3 text-[#171717] outline-none placeholder:text-black/35"
+                  placeholder="Tell me a bit about your course, ownership group, or what you are trying to improve."
+                />
+              </div>
+
+              <Button
+                type="submit"
+                className="w-full rounded-full bg-[#171717] py-6 text-white hover:bg-black/85"
+              >
+                Send message
+              </Button>
+            </form>
+          </div>
           </div>
         </section>
       </main>
