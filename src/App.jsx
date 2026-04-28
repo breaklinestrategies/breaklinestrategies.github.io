@@ -10,39 +10,33 @@ const servicesCourse = "/images/services-course.jpg";
 
 const serviceHighlights = [
   {
-    title: "Consulting",
+    title: "Consulting & Revenue Diagnosis",
     description:
-      "Start by identifying where the business is underperforming. Whether the issue is weak demand on certain days, low spend in the pro shop, or seasonal swings in play, the first step is defining the real business problem and the data needed to solve it.",
+      "Identify where revenue is being lost or underused, whether that comes from weak off-peak demand, underpriced peak tee times, low on-property spend, poor booking-channel mix, or seasonal swings in play.",
     icon: BriefcaseBusiness,
   },
   {
-    title: "Data Collection",
+    title: "Data Collection & Cleanup",
     description:
-      "Build or improve the system used to capture the right information. If you already use platforms like ForeUp or GolfNow, the work can build on that foundation rather than starting from scratch.",
+      "Work with the data a course already has, including tee-time bookings, POS exports, customer ZIP codes, pricing history, weather records, competitor promotions, and local-event calendars. The goal is to clean and organize the data so it can actually support decisions.",
     icon: Target,
   },
   {
-    title: "Data Structuring",
+    title: "Forecasting & Demand Modeling",
     description:
-      "Raw exports are rarely ready for analysis. Organize and format data so it is clean, consistent, and easy to use now, while also improving how it is collected going forward.",
-    icon: Sprout,
-  },
-  {
-    title: "Analytics & Insight",
-    description:
-      "Turn data into models, dashboards, and practical recommendations. This can include understanding who is spending, when revenue peaks, where opportunities are being missed, and how pricing or promotions can be improved.",
+      "Use historical performance, weather, seasonality, competitor activity, and local demand drivers to forecast utilization and revenue. This helps operators understand what demand may look like before making pricing or staffing decisions.",
     icon: ChartNoAxesCombined,
   },
   {
-    title: "Demand Drivers",
+    title: "Pricing & Promotion Strategy",
     description:
-      "Look beyond basic reporting to understand what actually drives demand. Weather, competition, traffic patterns, local events, and seasonality all shape performance, and those patterns can be measured and planned around.",
-    icon: Flag,
+      "Turn demand patterns into practical rate changes, targeted discounts, and on-property incentives. The focus is increasing revenue without relying only on more rounds or unnecessary pressure on the course.",
+    icon: TrendingUp,
   },
   {
     title: "Implementation Support",
     description:
-      "Use the findings to guide real decisions, from pricing and marketing to operational planning. The point is not just insight for insight's sake, but changes that fit the course and can actually be executed.",
+      "Help translate the analysis into changes the team can test, measure, and refine. The work is built around practical execution, not dashboards or reports that sit unused.",
     icon: ChevronRight,
   },
 ];
@@ -241,7 +235,7 @@ export default function BreakLineStrategiesSite() {
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm uppercase tracking-[0.26em] text-black/45">Services</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-[#161616] md:text-5xl">
-                A commitment to growth and problem-solving.
+                A practical process for finding and capturing revenue opportunities.
               </h2>
           
             </div>
@@ -259,11 +253,11 @@ export default function BreakLineStrategiesSite() {
                 *
               </div>
               <h3 className="mt-6 text-4xl font-semibold tracking-tight text-[#161616]">
-                A practical process for creating solutions.
+                From messy course data to decisions you can act on.
               </h3>
               <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-black/65">
-                From identifying the problem and collecting the right data to producing insights and helping implement
-                changes, the work is structured around making the business stronger, not just producing reports.
+                The work starts with understanding the business problem, then turns booking, customer, weather,
+                competitor, local-event data, and more into pricing, forecasting, and utilization decisions.
               </p>
             </div>
 
@@ -277,6 +271,13 @@ export default function BreakLineStrategiesSite() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.25 }}
                     transition={{ duration: 0.45, delay: index * 0.05 }}
+                    className={
+                      serviceHighlights.length === 5 && index === 3
+                        ? "xl:col-start-1 xl:translate-x-1/2"
+                        : serviceHighlights.length === 5 && index === 4
+                        ? "xl:col-start-2 xl:translate-x-1/2"
+                        : ""
+                    }
                   >
                     <Card className="h-full rounded-[1.75rem] border-black/10 bg-white/80 shadow-[0_18px_40px_rgba(0,0,0,0.05)]">
                       <CardContent className="p-7">
