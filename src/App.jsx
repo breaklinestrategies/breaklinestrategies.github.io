@@ -140,7 +140,7 @@ export default function BreakLineStrategiesSite() {
       <main>
         <section id="home" className="relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(124,150,120,0.18),transparent_28%),radial-gradient(circle_at_left,rgba(0,0,0,0.05),transparent_25%)]" />
-          <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-28">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-14">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ export default function BreakLineStrategiesSite() {
                 Revenue strategy for golf operators
               </div>
 
-              <h1 className="max-w-3xl text-5xl font-semibold leading-tight tracking-tight text-[#161616] md:text-6xl">
+              <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-[#161616] md:text-5xl">
                 Revenue analytics for golf operators who want smarter pricing, efficient utilization, and clearer growth decisions.
               </h1>
 
