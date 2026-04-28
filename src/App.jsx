@@ -107,7 +107,7 @@ const navItems = [
 export default function BreakLineStrategiesSite() {
   return (
     <div className="min-h-screen bg-[#f4f0ea] text-[#171717]">
-      <header className="sticky top-0 z-50 border-b border-black/10 bg-[#f4f0ea]">
+      <header className="sticky top-0 z-50 overflow-hidden border-b border-black/10 bg-[#f4f0ea]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-0 lg:px-8">
           <a href="#home" className="flex items-center">
             <img
